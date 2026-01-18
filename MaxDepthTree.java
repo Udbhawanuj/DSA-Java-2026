@@ -3,13 +3,11 @@ public class MaxDepthTree {
     static class TreeNode {
         int val;
         TreeNode left, right;
-
-        TreeNode(int val) {
+               TreeNode(int val) {
             this.val = val;
             left = right = null;
         }
     }
-
     public static int maxDepth(TreeNode root) {
         if (root == null) return 0;
         return 1 + Math.max(
@@ -27,3 +25,4 @@ public class MaxDepthTree {
         System.out.println(maxDepth(root));
     }
 }
+
